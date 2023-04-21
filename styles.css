@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background-color: #fafafa;
 }
 /* Reset default margin and padding for ul and li elements */
 ul, li {
@@ -11,44 +12,150 @@ ul, li {
 }
 
 header {
-    padding: 20px; /* Add padding around header */
+    padding: 20px 0px; /* Add padding around header */
 }
 
 nav ul {
+    margin-left: auto;
+    margin-right: auto;
     display: flex; /* Use flexbox for navigation */
+    max-width: 20%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul li {
-    margin-right: 20px; /* Add margin between buttons */
     text-align: center;
+}
+
+nav ul li a:hover {
+    color: #8a8a8a;
 }
 
 nav ul li a {
     color: #5e5e5e; /* Set button text color */
     text-decoration: none; /* Remove underline from links */
-    padding: 10px; /* Add padding to buttons */
+    padding: 12px; /* Add padding to buttons */
 }
 
 h1 {
     color: #444; /* Set button text color */
     text-align: center;
     font-family: serif;
-    font-size: 4em;
+    font-size: 5em;
     text-transform: uppercase;
     font-weight: normal;
     margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .container {
-    width: 60%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .about-container {
-    width: 40%;
+    color: #333; /* Set button text color */
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     line-height: 2;
     text-align: justify;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer nav {
+    margin-top: 20px;
+}
+
+footer nav li {
+    padding: 0px 20px;
+    min-width: 24px;
+}
+
+hr {
+    width: 580px;
+    margin-bottom: 15px;
+    background-color: #aaa;
+    height: 2px;
+    border: none;
+}
+
+.game-images ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-images ul li {
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.game-images ul li img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #444; /* Set button text color */
+    text-align: center;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+@media (max-width: 1080px) and (min-width: 650px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .about-container {
+        width: 470px;
+    }
+
+    hr {
+        width: 450px;
+    }
+}
+
+@media (max-width: 650px) and (min-width: 510px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    .about-container {
+        width: 400px;
+    }
+
+    hr {
+        width: 380px;
+    }
+}
+
+@media (max-width: 510px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .about-container {
+        width: 290px;
+    }
+
+    hr {
+        width: 270px;
+    }
 }
