@@ -57,7 +57,7 @@ h1 {
 
 .about-container {
     color: #333; /* Set button text color */
-    max-width: 600px;
+    max-width: 550px;
     margin-left: auto;
     margin-right: auto;
     line-height: 2;
@@ -163,10 +163,13 @@ h5 {
     }
 
     .about-container, .resume-block {
-        width: 290px;
+        width: 300px;
+        text-align: start;
+        word-spacing: 5px;
+        line-height: 1.5;
     }
 
     hr {
-        width: 270px;
+        width: 280px;
     }
 }
